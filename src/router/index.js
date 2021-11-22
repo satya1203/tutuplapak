@@ -6,14 +6,12 @@ import Home from '../components/Home.vue'
 import Footer from '../components/Footer.vue'
 import Cart from '../components/Cart.vue'
 import Checkout from '../components/Checkout.vue'
-import Contact from '../components/Contact.vue'
 import Order from '../components/Order.vue'
 import Profile from '../components/Profile.vue'
 import Sell from '../components/Sell.vue'
-import Signin from '../components/Sign in.vue'
-import Signup from '../components/Sign up.vue'
+import SignIn from '../components/SignIn.vue'
+import SignUp from '../components/SignUp.vue'
 import Grid from '../components/Grid.vue'
-import Blog from '../components/Blog.vue'
 
 Vue.use(Router)
 const router = new Router({
@@ -44,11 +42,6 @@ const router = new Router({
             name: 'Checkout'
         },
         {
-            path: '/Contact',
-            component: Contact,
-            name: 'Contact'
-        },
-        {
             path: '/Order',
             component: Order,
             name: 'Order'
@@ -59,14 +52,14 @@ const router = new Router({
             name: 'Profile'
         },
         {
-            path: '/Signin',
-            component: Signin,
-            name: 'Signin'
+            path: '/SignIn',
+            component: SignIn,
+            name: 'SignIn'
         },
         {
-            path: '/Signup',
-            component: Signup,
-            name: 'Signup'
+            path: '/SignUp',
+            component: SignUp,
+            name: 'SignUp'
         },
         {
             path: '/Sell',
@@ -78,11 +71,6 @@ const router = new Router({
             component: Grid,
             name: 'Grid'
         },
-        {
-            path: '/Blog',
-            component: Blog,
-            name: 'Blog'
-        }
     ]
 })
 
